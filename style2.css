@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+}
+.sidebar{
+	position: fixed;
+	width: 280px;
+	height: 100%;
+	left: 0;
+	background: black;
+}
+.sidebar .text{
+	color: whitesmoke;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 65px;	
+	text-align: center;
+	background: brown;
+}
+nav ul{
+	background: black;
+	height: 100%;
+	list-style: none;
+}
+nav ul li{
+	line-height: 30px;
+	border-bottom: 1px solid grey;
+}
+nav ul li a{
+	position: relative;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
+	padding-left: 30px;
+	border-left: 3px solid transparent;
+}
+nav ul li.active a{
+	color: cyan;
+	border-left-color: cyan;
+}
+nav ul ul{
+	position: static;
+	display: none;
+}
+nav ul .show_feat.show,
+nav ul .show_serivce.show1{
+	display: block;
+}
+nav ul ul li{
+	line-height: 42px;
+	border-bottom: none;
+}
+nav ul ul li a{
+	font-size: 17px;
+	color: #e6e6e6;
+	padding-left: 80px;
+}
+nav ul li.active ul li a{
+	color: white;
+	border-left-color: transparent;
+}
+nav ul ul li a:hover{
+	color: cyan!important;
+	background: #1e1e1e!important;
+}
+nav ul li a i{
+	position: absolute;
+	top: 50%;
+	right:20px;
+	transform: translateY(-50%);
+	font-size: 22px;
+	transition: transfrom 0.4s;
+}
+nav ul li a i.rotate{
+	transform: translateY(-50%) rotate(-180deg);
+}

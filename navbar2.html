@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>navbar</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<script  src="app.js"></script>
+</head>
+<body>
+	<!-- <i class="fa fa-chevron-circle-down" aria-hidden="true"></i> -->
+	<nav class="sidebar">
+		<div class="text">Side Menu</div>
+		<ul>
+			<li><a href="#">Dashboard</a></li>
+			<li>
+				<a href="#" class="feat_btn">Feature<i class="fa fa-chevron-circle-down first" aria-hidden="true"></i></a>
+				<ul class="show_feat">
+					<li><a href="#">Feature1</a></li>
+					<li><a href="#">Feature1</a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="serivce_btn">Service<i class="fa fa-chevron-circle-down second" aria-hidden="true"></i></a>
+				<ul class="show_serivce">
+					<li><a href="#">App Design 1</a></li>
+					<li><a href="#">App Design 2</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Overview</a></li>
+			<li><a href="#">About Us</a></li>
+		</ul>
+	</nav>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.feat_btn').click(function(){
+				$('nav ul .show_feat').toggleClass('show')
+				$('nav ul .first').toggleClass('rotate')
+				$('nav ul .show_serivce').removeClass('show1')
+			})
+			$('.serivce_btn').click(function(){
+				$('nav ul .show_serivce').toggleClass('show1')
+				$('nav ul .second').toggleClass('rotate')
+				$('nav ul .show_feat').removeClass('show')
+			})
+			$('nav ul li').click(function(){
+				$(this).addClass('active').siblings().removeClass('active').removeClass('show1 show')
+			})
+		})
+	</script>
+</body>
+</html>

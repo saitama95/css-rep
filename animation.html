@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		body{
+			overflow: hidden;
+		}
+		h3{
+			position: relative;
+			animation-name: heading;
+			animation-duration: 3s;
+		}
+		@keyframes  heading{
+			from{right: -100%}
+			to{right: 0}
+		}
+		a{
+			display: inline-block;
+		    padding: 20px 38px;
+		    text-decoration: none;
+		    border: 1px solid red;
+			position: relative;
+			animation-name: button1;
+			animation-duration: 2s;
+			transition: all 1s ease 1s;
+		}
+		a:hover{
+			transform: rotateX(180deg);
+		}
+		@keyframes button1{
+			from{transform:rotateX(90deg) }
+			to{transform:rotateX(0deg) }
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h3 style="text-align: center;">Loading</h3>
+		<a href="#">Click me</a>
+	</div>
+</body>
+</html>

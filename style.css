@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+}
+ul{
+	margin: 0;
+}
+li{
+	list-style: none;
+	display: inline-block;
+}
+.nav_top_section{
+    background: #11345a;
+    height: 55px;
+}
+.nav_top_section .nav_icon li{
+	border-radius: 50%;
+    border: 2px solid white;
+    padding: 3px 5px;
+    font-size: 18px;
+    margin: 0 10px;
+    background: #4a4a53;
+}
+.nav_top_section .search_bar select,input,button{
+    padding: 5px 8px;
+	border-radius: 2px;
+	border: none;
+	outline: none;
+	margin-right: 15px;
+}
+.nav_top_section .search_bar button{
+	padding: 5px 14px;
+    cursor: pointer;
+}
+.nav_top_section .search_bar input{
+	width: 70%;
+}
+..nav_top_section .login_btn{
+	position: relative;
+}
+.nav_top_section .login_btn a{
+	border: 1px solid white;
+    padding: 5px 26px 4px 8px;
+}
+.nav_top_section .login_btn i{
+	color: white;
+    position: absolute;
+    font-size: 15px;
+    right: 58%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 576px){
+	.nav_top_section .nav_icon{
+		margin-left: 0;
+	}
+	.nav_top_section .search_bar{
+		display: none;
+	}
+}
